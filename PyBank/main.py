@@ -63,19 +63,19 @@ print("Greatest Decrease in Profits: " + str(greatestLoss))
 #Output files
 outputFile = Path("Financial Analysis Summary.txt")
 
-with open(outputFile, "w") as file:
+with open(outputFile, "w") as f:
 #Write to file Financial Analysis Summary.txt 
 #Use \n to write newline in a file
-    file.write("Financial Analysis")
-    file.write("\n")
-    file.write("------------------")
-    file.write("\n")
-    file.write("Total months: " + str(totalMonth))
-    file.write("\n")
-    file.write("Total profit: " + "$" + str(totalNet))
-    file.write("\n")
-    file.write("Average profit: " + str(average))
-    file.write("\n")
-    file.write("Greatest Increase in Profits: " + str(greatestProfit))
-    file.write("\n")
-    file.write("Greatest Decrease in Profits: " + str(greatestLoss))
+    f.write("Financial Analysis")
+    f.write("\n")
+    f.write("------------------")
+    f.write("\n")
+    f.write("Total months: " + str(totalMonth))
+    f.write("\n")
+    f.write("Total profit: " + "$" + str(totalNet))
+    f.write("\n")
+    f.write("Average profit: " + str(average))
+    f.write("\n")
+    f.write("Greatest Increase in Profits: " + str(greatestProfit))
+    f.write("\n")
+    f.write("Greatest Decrease in Profits: " + str(greatestLoss))

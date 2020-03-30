@@ -66,18 +66,18 @@ print("Winner: " + str(Winner))
 print("----------------")
 
 #Output files
-outputFile = Path("Poll Vote Result.txt")
+outputFile = Path("Election Result.txt")
 
-with open(outputFile, "w") as file:
+with open(outputFile, "w") as f:
 #Write to file Election Results.txt
-    file.write("Election Results")
-    file.write("----------------")
-    file.write("Total Votes: " + str(totalVotes))
-    file.write("----------------")
-    file.write("Khan: " + str(rK) + "%" + " " + "(" + str(kVotes) + ")")
-    file.write("Correy: " + str(rC) + "%" + " " + "(" + str(cVotes) + ")")
-    file.write("Li: " + str(rL) + "%" + " " + "(" + str(lVotes) + ")")
-    file.write("O'Tooley: " + str(rO) + "%" + " " + "(" + str(oVotes) + ")")
-    file.write("----------------")
-    file.write("Winner: " + str(Winner))
-    file.write("----------------")
+    f.write("Election Results")
+    f.write("----------------")
+    f.write("Total Votes: " + str(totalVotes))
+    f.write("----------------")
+    f.write("Khan: " + str(rK) + "%" + " " + "(" + str(kVotes) + ")")
+    f.write("Correy: " + str(rC) + "%" + " " + "(" + str(cVotes) + ")")
+    f.write("Li: " + str(rL) + "%" + " " + "(" + str(lVotes) + ")")
+    f.write("O'Tooley: " + str(rO) + "%" + " " + "(" + str(oVotes) + ")")
+    f.write("----------------")
+    f.write("Winner: " + str(Winner))
+    f.write("----------------")
