@@ -1,0 +1,1 @@
+Financial Analysis------------------Total months: 86Total profit: $38382578Average profit: 1607.3255813953488Greatest Increase in Profits: ['Feb-12', '1926159']Greatest Decrease in Profits: ['Sep-13', '-2196167']
