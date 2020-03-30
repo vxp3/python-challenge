@@ -50,11 +50,13 @@ with open(budgetData) as csvfile:
 average = totalProfitChange / totalMonth
 
 #Print display information
+
 print("Financial Analysis")
 print("-------------------")
 print("Total months: " + str(totalMonth))
 print("Total profit: " + "$" + str(totalNet))
-print("Average profit: " + str(average))
+print("Average profit: " + str(average)) 
+#I dont know why I can't get the math to come out right
 print("Greatest Increase in Profits: " + str(greatestProfit))
 print("Greatest Decrease in Profits: " + str(greatestLoss))
 
@@ -63,10 +65,17 @@ outputFile = Path("Financial Analysis Summary.txt")
 
 with open(outputFile, "w") as file:
 #Write to file Financial Analysis Summary.txt 
+#Use \n to write newline in a file
     file.write("Financial Analysis")
+    file.write("\n")
     file.write("------------------")
+    file.write("\n")
     file.write("Total months: " + str(totalMonth))
+    file.write("\n")
     file.write("Total profit: " + "$" + str(totalNet))
+    file.write("\n")
     file.write("Average profit: " + str(average))
+    file.write("\n")
     file.write("Greatest Increase in Profits: " + str(greatestProfit))
+    file.write("\n")
     file.write("Greatest Decrease in Profits: " + str(greatestLoss))
